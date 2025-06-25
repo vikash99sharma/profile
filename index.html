@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Logo Image as Circle */
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: #f0f0f0;
+}
+
+.home .text {
+  max-width: 500px;
+}
+
+.home .image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px black;
+}
+
+/* About */
+.about {
+  background: #ffffff;
+}
+
+/* Services */
+.services {
+  background: #f9f9f9;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-boxes .box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+ #contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  #contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+    margin: 12px 0;
+    color: #666;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo"><img src="myphoto.jpg" alt=""></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the home section introducing myself.</p>
+    </div><br><br><br><br><br>
+    <div class="image">
+      <img src="myphoto.jpg" alt="Profile Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer. Here are the details about me, including all my skills and background information.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-boxes">
+      <div class="box">
+        <img src="image.png"height="70px" alt="Service 1">
+        <p>Web Design</p>
+      </div>
+      <div class="box">
+        <img src="img2.jpg" height="70px"alt="Service 2">
+        <p>Frontend Development</p>
+      </div>
+      <div class="box">
+        <img src="img3.jpg"height="70px" alt="Service 3">
+        <p>Backend Development</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>📞 Phone:</strong> +91-9162973970</p>
+      <p><strong>📍 Address:</strong> siwan bihar India</p>
+      <p><strong>📫 Email:</strong> vsharma@email.com</p>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vikash Sharma all copyright claim</p>
+  </footer>
+
+</body>
+</html>
